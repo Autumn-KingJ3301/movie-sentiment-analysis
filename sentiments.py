@@ -33,7 +33,7 @@ model = LogisticRegression(max_iter=40000)
 model.fit(x_train_tf, y_train)
 
 y_prediction = model.predict(x_test_tf)
-ja
+
 accuracy = accuracy_score(y_test, y_prediction)
 confusion = confusion_matrix(y_test, y_prediction)
 class_report = classification_report(y_test, y_prediction)
